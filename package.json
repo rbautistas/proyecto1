@@ -1,0 +1,24 @@
+{
+  "name": "Motor",
+  "version": "0.0.0",
+  "author": "Ruben Bautista Castillo",
+  "description": "Modularizacion Api Rest Full",
+  "private": true,
+  "scripts": {
+    "start": "node ./config/bin/server/www"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "debug": "*",
+    "express": "*",
+    "express-load": "*",
+    "mongoose": "*",
+    "jade": "*",
+    "path": "*",
+    "morgan": "*",
+    "serve-favicon": "*",
+    "compression": "*",
+    "errorhandler": "*"
+  }
+}
