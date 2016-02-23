@@ -8,26 +8,32 @@
       
     
 */
+
+
 module.exports = function(){	                              
 //  var env = require('./env');
-    var  express = require('express'),          
+
+         var      express = require('express'),          
          bodyParser = require('body-parser'),        
-         app = express(),          
-         
-         errorHandler = require('errorhandler'),               
-         path = require('path'),
-         router = express.Router();   
-         app.use(express.static(__dirname + '/app'));
-         app.use(bodyParser.urlencoded({extended: true}));
-         app.use(bodyParser.json());
-         app.use(router);   
-         //app.use(express.static('public'));
-         
-         if('development' == app.get('env')){
-           app.use(errorHandler());
-         }
+         app = express(),                            
+         path = require('path');
 
          
+         app.use(express.static(path.join(__dirname + "/app")));
+         //app.use(bodyParser.urlencoded({extended: true}));
+         app.use(express.logger('dev'));
+         app.use(express.json);
+         app.use(express.urlencoded());         
+         app.use(express.methodOverride());
+         app.use(app.router);
+         app.use(express.static(path.join(__dirname + "/public")));
+
+         if('development' == app.get('env')){
+           app.use(express.errorHandler());
+         }
+       
+         //app.use(express.Router());
+         //app.use(express.static('public'));                           
         //app.use(bodyParser());  
         //require('../../../app/routes/index.js')(app);    
         //app.use(express.static('public'));       

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 var constantes = require('../constantes/constantes');
-var app = require('../../../app');
+var app = require('../../../app/app');
 var debug = require('debug')('app4:server');
 var http = require('http');
 /**

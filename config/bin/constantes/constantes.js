@@ -43,10 +43,10 @@ var opciones={
   pass: ''
 }
 
-module.exports = {
-    cPort: puerto, 
-    cUrldb: desarrollo,
-    cdbName: dbName,
-    cCondb: condb,
-    cOpcionesConexion: opciones
+module.exports ={
+    cPort : puerto, 
+    cUrldb : desarrollo,
+    cdbName : dbName,
+    cCondb : condb,
+    cOpcionesConexion : opciones
 };

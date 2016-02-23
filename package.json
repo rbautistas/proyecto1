@@ -9,16 +9,16 @@
   },
   "dependencies": {
     "body-parser": "*",
-    "cookie-parser": "*",
-    "debug": "*",
-    "express": "*",
-    "express-load": "*",
-    "mongoose": "*",
-    "jade": "*",
-    "path": "*",
-    "morgan": "*",
-    "serve-favicon": "*",
     "compression": "*",
-    "errorhandler": "*"
+    "cookie-parser": "*",    
+    "debug": "*",
+    "errorhandler": "*",
+    "express": "3.0.6",
+    "express-load": "*",
+    "jade": "*",
+    "mongoose": "*",
+    "morgan": "*",
+    "path": "*",
+    "serve-favicon": "*"
   }
 }
