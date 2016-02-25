@@ -6,11 +6,11 @@
 //   	res.send('Have a user: ');
 // };
 module.exports = function(app){
-	//var usuarios= app.models.users;
-	var UsuarioController = {		
+	//var usuarios= app.models.user;
+	var usuarioController = {		
 		index: function(req,res){
 			res.send("hola express");
 		}		
 	}
-	return UsuarioController;
+	return usuarioController;
 };
