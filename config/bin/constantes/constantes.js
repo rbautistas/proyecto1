@@ -3,31 +3,31 @@
 *Descripción: Constantes de configuracion.
 *Variables Globales
 */
-global.__base = __dirname + '/';
+var base = __dirname + '/';
 /*
 *Puerto de configuración del servidor
 */
-puerto= 3000;
+puerto= 3000,
 /*
 * Url de conexion a la base de datos MongoDB produción driver
 */
-produccion= 'mongodb://127.0.0.1/';
+produccion= 'mongodb://127.0.0.1/',
 /*
 * Url de conexion a la base de datos MongoDB desarrollo driver
 */
-desarrollo= 'mongodb://127.0.0.1/';
+desarrollo= 'mongodb://127.0.0.1/',
 /*
 * Url de conexion a la base de datos MongoDB test driver
 */
-prueba= 'mongodb://127.0.0.1/';
+prueba= 'mongodb://127.0.0.1/',
 /*
 *Nombre de la base de datos MongoDB
 */
-dbName='dbPruebasSql';
+dbName='dbPruebasSql',
 /*
 *Variable que recibe la conexion de MONGODB
 */
-condb='';
+condb='',
 /*
 *	POOL DE CONNECIONES
 *	// single server
@@ -35,18 +35,18 @@ condb='';
 *	// for a replica set
 *   mongoose.createConnection(uri, { replset: { poolSize: 4 }});
 */
-var opciones={
-  db: { native_parser: true },
-  server: { poolSize: 5 }, //POOL  DE CONECCIONES
-  replset: { rs_name: 'myReplicaSetName' },
-  user: '',
-  pass: ''
-}
+opciones={
+	db: { native_parser: true },
+	server: { poolSize: 5 }, //POOL  DE CONECCIONES
+	replset: { rs_name: 'myReplicaSetName' },
+	user: '',
+	pass: ''
+};
 
 module.exports ={
-    cPort : puerto, 
-    cUrldb : desarrollo,
-    cdbName : dbName,
-    cCondb : condb,
-    cOpcionesConexion : opciones
+		cPort : puerto, 
+		cUrldb : desarrollo,
+		cdbName : dbName,
+		cCondb : condb,
+		cOpcionesConexion : opciones
 };
