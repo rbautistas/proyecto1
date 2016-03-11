@@ -18,6 +18,7 @@
     "mongoose": "*",
     "morgan": "*",
     "path": "*",
-    "serve-favicon": "*"
+    "serve-favicon": "*",
+    "jsonwebtoken": "*"
   }
 }
