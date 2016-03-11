@@ -4,7 +4,7 @@ var   conexion      =   require('../config/bin/conexion/conexion'),
 	  db 			= 	conexion();	 	  
 	  app			=   express();	  	 
 	  module.exports = app;	  	
-	console.log("servidor corriendo por el puertosss: "+constantes.cPort); 
+	console.log("servidor corriendo por el puertos: "+constantes.cPort); 
 
 
 
